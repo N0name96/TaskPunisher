@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\dtos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\dtos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\dtos\\punishment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\dtos\\punishment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\models\\statustype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\models\\statustype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\dtos\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\dtos\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\models\\interfaces\\itaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\models\\interfaces\\itaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\dtos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\dtos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|c:\\users\\shado\\documents\\github\\taskpunisher\\taskpunisher.api\\taskpunisher.api\\models\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253F493-83E9-4993-8BF0-FEE244511A28}|TaskPunisher.API\\TaskPunisher.API.csproj|solutionrelative:taskpunisher.api\\models\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Punishment.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Punishment.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\DTOs\\Punishment.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Punishment.cs",
-              "RelativeToolTip": "TaskPunisher.API\\DTOs\\Punishment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "StatusType.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\StatusType.cs",
+              "RelativeDocumentMoniker": "TaskPunisher.API\\Models\\StatusType.cs",
+              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\StatusType.cs",
+              "RelativeToolTip": "TaskPunisher.API\\Models\\StatusType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T10:38:47.779Z",
+              "WhenOpened": "2025-10-19T01:07:32.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Task.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\DTOs\\Task.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Task.cs",
-              "RelativeToolTip": "TaskPunisher.API\\DTOs\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "TaskPunisher.API\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Response.cs",
+              "RelativeToolTip": "TaskPunisher.API\\Models\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T10:37:24.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Login.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\DTOs\\Login.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Login.cs",
-              "RelativeToolTip": "TaskPunisher.API\\DTOs\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T10:35:42.996Z",
+              "WhenOpened": "2025-10-19T00:40:32.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Register.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\DTOs\\Register.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\DTOs\\Register.cs",
-              "RelativeToolTip": "TaskPunisher.API\\DTOs\\Register.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskPunisher.API\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskPunisher.API\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T10:33:57.75Z",
+              "WhenOpened": "2025-10-19T00:30:26.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "TaskPunisher.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ITaskService.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Interfaces\\ITaskService.cs",
+              "RelativeDocumentMoniker": "TaskPunisher.API\\Models\\Interfaces\\ITaskService.cs",
+              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Interfaces\\ITaskService.cs",
+              "RelativeToolTip": "TaskPunisher.API\\Models\\Interfaces\\ITaskService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T10:00:01.767Z",
+              "WhenOpened": "2025-10-19T00:29:27.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Program.cs",
-              "RelativeDocumentMoniker": "TaskPunisher.API\\Program.cs",
-              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Program.cs",
-              "RelativeToolTip": "TaskPunisher.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Title": "ITaskController.cs",
+              "DocumentMoniker": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Interfaces\\ITaskController.cs",
+              "RelativeDocumentMoniker": "TaskPunisher.API\\Models\\Interfaces\\ITaskController.cs",
+              "ToolTip": "C:\\Users\\shado\\Documents\\GitHub\\TaskPunisher\\TaskPunisher.API\\TaskPunisher.API\\Models\\Interfaces\\ITaskController.cs",
+              "RelativeToolTip": "TaskPunisher.API\\Models\\Interfaces\\ITaskController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T09:59:29.402Z",
+              "WhenOpened": "2025-10-19T00:27:14.453Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskPunisher.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de662d91d4151eb41124abc899329edacf6b21df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73e2b15c30d4ba4e166776dabbe125cfc2bc5ee5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskPunisher.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskPunisher.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

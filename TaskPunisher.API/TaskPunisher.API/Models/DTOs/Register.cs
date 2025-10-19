@@ -1,4 +1,4 @@
-﻿namespace TaskPunisher.API.DTOs
+﻿namespace TaskPunisher.API.Models.DTOs
 {
     public class Register
     {
