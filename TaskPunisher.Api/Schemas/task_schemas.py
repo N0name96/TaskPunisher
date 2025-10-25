@@ -8,6 +8,10 @@ class Task(BaseModel):
     description: str
     isCompleted: bool
 
+    model_config = {
+        "from_attributes": True
+    }
+
 
 class TaskCreate(BaseModel):
     '''Task create model'''

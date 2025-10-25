@@ -1,13 +1,21 @@
-import uvicorn
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, Depends
-from sentry_sdk.session import Session
+from sqlalchemy.orm import Session
 
 from Database.Connection import get_db
 from Database.Tables import create_tables
+from Routers import task_router
 
-app = FastAPI()
 
-create_tables()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    create_tables()
+    yield
+
+app = FastAPI(lifespan=lifespan)
+
+app.include_router(task_router.router)
 
 
 @app.get('/')
@@ -16,6 +24,6 @@ async def root():
 
 
 @app.get('/ChekConnection')
-async def CheckConnection(db: Session = Depends(get_db)):
+async def checkconnection(db: Session = Depends(get_db)):
     return {"message": "OK"}
 

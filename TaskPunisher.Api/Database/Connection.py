@@ -4,7 +4,6 @@ from sqlalchemy.orm import sessionmaker
 
 DB_TASKS = 'sqlite:///Data/TaskPunisher.db'
 
-
 engine = create_engine(
     url=DB_TASKS,
     connect_args=
@@ -13,13 +12,11 @@ engine = create_engine(
     }
 )
 
-
 SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
     bind=engine
 )
-
 
 def get_db():
     '''get the database session'''
