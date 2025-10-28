@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from sqlalchemy import select
+from sqlalchemy import select, update
 from typing import List, Annotated
 
 
@@ -13,10 +13,62 @@ router = APIRouter()
 
 SessionDB = Annotated[Session, Depends(get_db)]
 
+
+@router.post('/create_task/')
+async def create_task(task: TaskCreate, db: SessionDB):
+    '''Function that creates a new task'''
+
+    db_task = TasksModel(**task.model_dump())
+    db.add(db_task)
+    db.commit()
+    db.refresh(db_task)
+    return {"Ok": True}
+
+
+
 @router.get('/read_tasks/', response_model=List[TaskSchema])
 async def read_tasks(db: SessionDB):
     '''Function that reads all tasks'''
 
     result = db.execute(select(TasksModel)).scalars().all()
-    print(result)
     return result
+
+# todo -> TERMINAR CRUD
+
+@router.get('/read_task/{task_id}', response_model=TaskSchema)
+async def read_task(task_id: int, db: SessionDB):
+    '''Function that reads a single task'''
+
+    result = db.get(TasksModel, task_id)
+
+    if not result:
+        raise HTTPException(status_code=404, detail='Task not found')
+
+    return result
+
+
+@router.delete('/delete_task/{task_id}')
+async def delete_task(task_id: int, db: SessionDB):
+    '''Function that deletes a single task'''
+
+    task = db.get(TasksModel, task_id)
+
+    if not task:
+        raise HTTPException(status_code=404, detail='Task not found')
+
+    db.delete(task)
+    db.commit()
+    return {"Ok": True}
+
+@router.update('/update_task/{task_id}/{updated_task}')
+async def update_task(task_id: int, db: SessionDB):
+    '''Function that updates a single task'''
+
+    update_task = db.get(TasksModel, task_id)
+
+    if not update_task:
+        raise HTTPException(status_code=404, detail='Task not found')
+
+    # db.update(TasksModel, update_task)
+    # db.commit()
+    return {"Ok": True}

@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Task(BaseModel):
@@ -17,11 +17,11 @@ class TaskCreate(BaseModel):
     '''Task create model'''
 
     description: str
-    isCompleted: bool
+    isCompleted: bool = Field(default=False)
 
 
 class TaskUpdate(BaseModel):
     '''Task update model'''
-
+# TODO Hacerlo opcional
     description: str
-    isCompleted: bool
+    isCompleted: bool = Field(default=False)
