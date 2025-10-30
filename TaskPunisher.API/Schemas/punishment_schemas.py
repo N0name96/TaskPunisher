@@ -2,8 +2,10 @@ from pydantic import BaseModel, Field
 from typing import Optional
 
 
-class TaskBase(BaseModel):
-    """Task model"""
+
+
+class PunishmentBase(BaseModel):
+    """PunishmentModel"""
 
     id: int
     description: str
@@ -14,15 +16,17 @@ class TaskBase(BaseModel):
     }
 
 
-class TaskCreate(BaseModel):
-    """Task create model"""
+
+class PunishmentCreate(BaseModel):
+    """Punishment Create Model"""
 
     description: str
     isCompleted: bool = Field(default=False)
 
 
-class TaskUpdate(BaseModel):
-    """Task update model"""
+
+class PunishmentUpdate(BaseModel):
+    """Punishment Update Model"""
 
     description: Optional[str] = Field(default=None)
     isCompleted: Optional[bool] = Field(default=False)
