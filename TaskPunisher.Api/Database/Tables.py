@@ -5,7 +5,7 @@ from .Connection import engine
 
 
 def create_tables():
-    '''Function that creates tables in db'''
+    """Function that creates tables in db"""
     inspector = inspect(engine)
 
     table_name = Tasks.__name__

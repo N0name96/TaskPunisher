@@ -19,7 +19,7 @@ SessionLocal = sessionmaker(
 )
 
 def get_db():
-    '''get the database session'''
+    """get the database session"""
 
     db = SessionLocal()
     try:

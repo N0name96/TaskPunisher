@@ -1,8 +1,9 @@
 from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class Task(BaseModel):
-    '''Task model'''
+    """Task model"""
 
     id: int
     description: str
@@ -14,14 +15,14 @@ class Task(BaseModel):
 
 
 class TaskCreate(BaseModel):
-    '''Task create model'''
+    """Task create model"""
 
     description: str
     isCompleted: bool = Field(default=False)
 
 
 class TaskUpdate(BaseModel):
-    '''Task update model'''
-# TODO Hacerlo opcional
-    description: str
-    isCompleted: bool = Field(default=False)
+    """Task update model"""
+
+    description: Optional[str] = Field(default=None)
+    isCompleted: Optional[bool] = Field(default=False)

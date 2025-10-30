@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class Tasks(Base):
-    '''Task model'''
+    """Task model"""
 
     __tablename__ = 'Tasks'
 

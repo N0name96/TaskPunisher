@@ -8,6 +8,7 @@ from Database.Tables import create_tables
 from Routers import task_router
 
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     create_tables()
@@ -17,10 +18,6 @@ app = FastAPI(lifespan=lifespan)
 
 app.include_router(task_router.router)
 
-
-@app.get('/')
-async def root():
-    return {"message": "Helo world"}
 
 
 @app.get('/ChekConnection')
