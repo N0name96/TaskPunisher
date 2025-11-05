@@ -45,8 +45,8 @@ async def get_tasks(db: SessionDB):
     """Function that reads all tasks"""
 
     try:
-        result = db.execute(select(TasksModel)).scalars().all()
-
+        result = db.query(TasksModel).all()
+#todo -> terminar de probar el response
         response = ResponseModel(
             status_code=200,
             message="",
