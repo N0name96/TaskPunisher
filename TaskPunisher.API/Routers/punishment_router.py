@@ -19,7 +19,6 @@ SessionDB = Annotated[Session, Depends(get_db)]
 
 
 
-
 @router.post('/create_punishment/{punisment}')
 async def create_punishment(newpunishment: PunishmentCreate, db: SessionDB):
     """Function to create new punishment"""
@@ -52,7 +51,6 @@ async def get_punishment_by_id(punishment_id: int, db: SessionDB):
         raise HTTPException(status_code=404, detail="Punishment not found")
 
     return punishment
-
 
 
 @router.put('/update_punishment/{punishment_id}/{updated_punishment}')

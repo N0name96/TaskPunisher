@@ -4,6 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class Punishments(Base):
+    """Punishments table"""
+
     __tablename__ = 'PunishmentS'
 
     id = Column(Integer, primary_key=True)
