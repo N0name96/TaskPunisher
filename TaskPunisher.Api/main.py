@@ -24,5 +24,4 @@ app.include_router(punishment_router.router)
 async def checkconnection(db: Session = Depends(get_db)):
     return {"message": "OK"}
 
-#todo -> create a response object
-#todo -> create handle errors
+#todo -> create get random punishment

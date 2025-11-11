@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy import select
-from typing import List, Annotated
+from typing import List, Annotated, Any
 
 from Database.Connection import get_db
 from Models.task_Model import Tasks as TasksModel
@@ -16,7 +16,7 @@ router = APIRouter(
 SessionDB = Annotated[Session, Depends(get_db)]  #Instance the db in a variable
 
 
-@router.post('/create_task/', response_model=ResponseModel)
+@router.post('/create_task/', response_model=ResponseModel[Any])
 async def create_task(task: TaskCreate, db: SessionDB):
     """Function that creates a new task"""
 
@@ -26,13 +26,13 @@ async def create_task(task: TaskCreate, db: SessionDB):
         db.commit()
         db.refresh(db_task)
 
-        response = ResponseModel(
+        return ResponseModel(
             status_code=200,
             message="Task created successfully",
             response=None
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error occured while creating task",
             response=None
@@ -40,29 +40,27 @@ async def create_task(task: TaskCreate, db: SessionDB):
     return response
 
 
-@router.get('/read_tasks/', response_model=ResponseModel)
+@router.get('/read_tasks/', response_model=ResponseModel[List[TaskSchema]])
 async def get_tasks(db: SessionDB):
     """Function that reads all tasks"""
 
     try:
         result = db.query(TasksModel).all()
-#todo -> terminar de probar el response
-        response = ResponseModel(
+
+        return ResponseModel(
             status_code=200,
             message="",
             response=result
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error occured while fetching tasks",
             response=None
         )
 
-    return response
 
-
-@router.get('/read_task_by_id/{task_id}', response_model=ResponseModel)
+@router.get('/read_task_by_id/{task_id}', response_model=ResponseModel[TaskSchema])
 async def get_task_by_id(task_id: int, db: SessionDB):
     """Function that reads a single task"""
 
@@ -74,28 +72,26 @@ async def get_task_by_id(task_id: int, db: SessionDB):
         if not result:
             raise HTTPException(status_code=404, detail='Task not found')
 
-        response = ResponseModel(
+        return ResponseModel(
             status_code=200,
             message="",
             response=result
         )
     except HTTPException as ht:
-        response = ResponseModel(
+        return ResponseModel(
             status_code = ht.status_code,
             message = ht.detail,
             response = None
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error ocurred while fetching this task",
             response=None
         )
-    return response
 
 
-
-@router.put('/update_task/{task_id}/{updated_task}', response_model=ResponseModel)
+@router.put('/update_task/{task_id}/{updated_task}', response_model=ResponseModel[Any])
 async def update_task(task_id: int, taskupdate: TaskUpdate, db: SessionDB):
     """Function that updates a single task"""
 
@@ -115,27 +111,27 @@ async def update_task(task_id: int, taskupdate: TaskUpdate, db: SessionDB):
         db.commit()
         db.refresh(task)
 
-        response = ResponseModel(
+        return ResponseModel(
             status_code=200,
             message="Task updated successfully",
             response=None
         )
     except HTTPException as ht:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=ht.status_code,
             message=ht.detail,
             response = None
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error occured while updating task",
             response = None
         )
-    return response
+    
 
 
-@router.put('/update_tasks_false/', response_model=ResponseModel)
+@router.put('/update_tasks_false/', response_model=ResponseModel[Any])
 async def update_tasks_false(db: SessionDB):
     """Function that updates a list of tasks false"""
 
@@ -143,21 +139,20 @@ async def update_tasks_false(db: SessionDB):
         db.query(TasksModel).update({TasksModel.isCompleted: False})
         db.commit()
 
-        response = ResponseModel(
+        return ResponseModel(
             status_code=200,
             message="Tasks updated false successfully",
             response=None
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error occured while updating tasks false",
             response = None
         )
-    return response
 
 
-@router.delete('/delete_task/{task_id}', response_model=ResponseModel)
+@router.delete('/delete_task/{task_id}', response_model=ResponseModel[Any])
 async def delete_task(task_id: int, db: SessionDB):
     """Function that deletes a single task"""
 
@@ -170,15 +165,14 @@ async def delete_task(task_id: int, db: SessionDB):
         db.delete(task)
         db.commit()
 
-        response = ResponseModel(
+        return ResponseModel(
             status_code=200,
             message="Task deleted successfully",
             response=None
         )
     except Exception:
-        response = ResponseModel(
+        return ResponseModel(
             status_code=400,
             message="An error occured while deleting task",
             response = None
         )
-    return response
