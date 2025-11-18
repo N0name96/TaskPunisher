@@ -18,8 +18,6 @@ router = APIRouter(
 
 SessionDB = Annotated[Session, Depends(get_db)]
 
-#todo -> create a get random punishment
-
 
 @router.post('/create_punishment/{punisment}', response_model=ResponseModel[Any])
 async def create_punishment(newpunishment: PunishmentCreate, db: SessionDB):
