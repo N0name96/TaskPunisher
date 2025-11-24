@@ -1,14 +1,19 @@
 <div class="task-list">
     <h2 class="title">Task List</h2>
 
-    <div *ngIf="tasks().length === 0">
-        No hay tareas disponibles
-    </div>
-    
-    <ul *ngIf="tasks.length > 0">
-        <li *ngFor="let task of tasks()">
-            {{ task.dataSignal }}
-        </li>
-    </ul>
-   
+    @if (list_tasks().length === 0) {
+        <div>No hay tareas..</div>
+    }
+
+    @if (list_tasks().length > 0) {
+        <ul>
+            @for (item of list_tasks(); track item.description) {
+                <li>
+                    {{ item.description }}
+
+                    <button class="delete-btn" (click)="deleteTask(item.id)">DELETE</button>
+                </li>
+            }
+        </ul>
+    }
 </div>

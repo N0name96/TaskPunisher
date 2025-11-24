@@ -1,8 +1,7 @@
 import { Component, inject, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Task } from '../models/task';
-import { Task as TaskService} from '../services/task';
+import { TaskService } from '../services/task-service';
 
 
 @Component({
@@ -16,10 +15,14 @@ import { Task as TaskService} from '../services/task';
 export class TaskList {
 
   private taskService = inject(TaskService)
-
-  tasks = this.taskService.dataSignal
-
+  
   constructor() {
     effect(() => this.taskService.getTasks())
   }
+
+  list_tasks = this.taskService.dataSignal
+
+  // deleteTask(id: number) {
+  //   this.taskService.deleteTask(id)
+  // }
 }
