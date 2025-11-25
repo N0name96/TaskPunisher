@@ -11,42 +11,41 @@ import { ResponseModel } from '../../../models/ResponseModel.model';
 export class TaskService {
   
   private apiUrl = environment.apiUrl
-
-  public dataSignal: WritableSignal<TaskModel[]> = signal([])
-
   private readonly http = inject(HttpClient)
 
-  async getTasks(): Promise<ResponseModel<TaskModel[]>> {
-    const response = await fetch(`${this.apiUrl}/task/read_tasks/`)
-
-    if (!response.ok) {
-      throw new Error(`Error ${response.status}: No se pudo obtener el usuario`)
+  
+  async getTasks(): Promise<TaskModel[]> {
+    try {
+      const response = await fetch(`${this.apiUrl}/task/read_tasks/`)
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}: No se pudo obtener las tareas`)
+      }
+      const result = await response.json()
+      if(!result.response){
+        throw new Error('Respuesta invalida del servidor')
+      }
+      return result.response
     }
-    
-    console.log(response.json())
-    return response.json()
+    catch (err: unknown) {
+      console.error('Error obteniendo tareas:', err);
+      throw err instanceof Error ? err : new Error('Error a la hora de obtener las tareas');
+    }
   }
 
-  // getTasks() {
-  //   return this.http
-  //     .get<ResponseModel<TaskModel[]>> (
-  //       `${this.apiUrl}/task/read_tasks/`
-  //     )
-  //     .subscribe(res => {
-  //       this.dataSignal.set(res.response || [])
-  //     })
-  // }
 
-
-  // deleteTask(id: number) {
-  //   return this.http
-  //     .delete<string> (
-  //       `${this.apiUrl}/task/delete_task/${id}`
-  //     )
-  //     .subscribe(() => {
-  //       this.dataSignal.set(
-  //         this.dataSignal().filter(task => task.id !== id)
-  //       )
-  //     })
-  // }
+  async deleteTask(id: number): Promise<void> {
+    try {
+      const response = await fetch(
+        `${this.apiUrl}/task/delete_task/${id}`,
+        { method:'DELETE' }
+      )
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}: No se pudo realizar el borrado de la tarea`)
+      }
+    }
+    catch (err: unknown) {
+      console.error('Error a la hora de llamar al borraDo de tareas:', err);
+      throw err instanceof Error ? err : new Error('Error a la hora llamar al borrado de tareas');
+    }
+  }
 }

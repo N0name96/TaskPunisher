@@ -1,19 +1,27 @@
-<div class="task-list">
-    <h2 class="title">Task List</h2>
+<h2>Task Punisher</h2>
 
-    @if (list_tasks().length === 0) {
-        <div>No hay tareas..</div>
+
+@if (taskResource.isLoading()) {
+    <p>Cargando tareas</p>
+}
+
+@if (taskResource.error(); as err) {
+    <p>Error: {{ err.message }}</p>
+}
+
+
+@if (tasks(); as task_list) {
+    @if (task_list.length === 0) {
+        <p>No hay tareas</p>
     }
 
-    @if (list_tasks().length > 0) {
-        <ul>
-            @for (item of list_tasks(); track item.description) {
-                <li>
-                    {{ item.description }}
+    <ul>
+        @for (task of task_list; track task.id) {
+            <li>
+                {{ task.description }}
 
-                    <button class="delete-btn" (click)="deleteTask(item.id)">DELETE</button>
-                </li>
-            }
-        </ul>
-    }
-</div>
+                <button (click)="this.deleteTask(task.id)">DELETE</button>
+            </li>
+        }
+    </ul>
+}
