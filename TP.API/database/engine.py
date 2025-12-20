@@ -10,7 +10,7 @@ BD_DIR.mkdir(parents=True, exist_ok=True)
 BD_FILE = "TaskPunisher.db"
 
 
-DATABASE_URL = f"sqlite+aiosqlite:///{BD_DIR}/TaskPunisher.db"
+DATABASE_URL = f"sqlite+aiosqlite:///{BD_DIR}/{BD_FILE}"
 
 
 async_engine = create_async_engine(
