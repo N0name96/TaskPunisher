@@ -21,4 +21,13 @@ class SQLAlchemyTaskRepository(TaskRepository):
 
 
     async def get_task_by_id(self, task_id: int) -> Tasks:
+        """
+        Funcion para obtener una tarea filtrado por id
+        """
+
+        task = await self.session.get(Tasks, task_id)
+        return task
+
+    
+    async def create_task(self):
         pass

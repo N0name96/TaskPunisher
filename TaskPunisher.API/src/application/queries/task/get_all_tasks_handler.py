@@ -1,7 +1,7 @@
 from typing import List
 
 from src.domain.repositories.task.task_repository import TaskRepository
-from src.application.dtos.task.TaskBaseDTO import TaskBaseDTO
+from src.application.dtos import TaskBaseDTO
 
 
 class GetAllTasksHandler:
@@ -16,4 +16,4 @@ class GetAllTasksHandler:
         """
 
         list_tasks = await self.repository.get_all_tasks()
-        return [TaskBaseDTO.model_validate(task) for task in list_tasks] # Realiza el mapeo de datos
+        return list_tasks

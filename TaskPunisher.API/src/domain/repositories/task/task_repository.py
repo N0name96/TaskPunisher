@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 from src.domain.entities.task.task_entity import Tasks
+from src.application.dtos.Task import TaskCreateDTO
 
 
 class TaskRepository(ABC):
@@ -9,7 +10,14 @@ class TaskRepository(ABC):
         """Define el contrato para obtener todas las tareas"""
         raise NotImplementedError
 
+
     @abstractmethod
     async def get_task_by_id(self, task_id: int) -> Tasks:
         """Define el contrato para obtner una tarea filtrado por id"""
+        raise NotImplementedError
+    
+    
+    @abstractmethod
+    async def create_task(self, new_task: TaskCreateDTO) -> bool:
+        """Define el contrato para crear una tarea"""
         raise NotImplementedError

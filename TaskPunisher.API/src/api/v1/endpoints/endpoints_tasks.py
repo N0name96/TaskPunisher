@@ -37,3 +37,6 @@ async def get_all_tasks(db: AsyncSession = sessionDb) -> StandardResponse:
         return StandardResponse(status=200, message="Lista de tareas", data=result)
     except Exception as err:
         return StandardResponse(status=500, message=f"Error a la hora de obtener la lista de tareas, {err}", data=None)
+    
+
+
