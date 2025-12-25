@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 from src.domain.entities.task.task_entity import Tasks
-from src.application.dtos.Task import TaskCreateDTO
+from src.application.dtos.task import TaskCreateDTO
 
 
 class TaskRepository(ABC):
@@ -18,6 +18,6 @@ class TaskRepository(ABC):
     
     
     @abstractmethod
-    async def create_task(self, new_task: TaskCreateDTO) -> bool:
+    async def create_task(self, new_task: TaskCreateDTO) -> int:
         """Define el contrato para crear una tarea"""
         raise NotImplementedError

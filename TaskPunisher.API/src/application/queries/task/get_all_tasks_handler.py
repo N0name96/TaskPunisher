@@ -15,5 +15,4 @@ class GetAllTasksHandler:
         :return:
         """
 
-        list_tasks = await self.repository.get_all_tasks()
-        return list_tasks
+        return await self.repository.get_all_tasks()

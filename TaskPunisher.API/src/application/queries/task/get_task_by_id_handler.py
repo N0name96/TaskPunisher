@@ -1,7 +1,7 @@
 from typing import List
 
 from src.domain.repositories.task.task_repository import TaskRepository
-from src.application.dtos.Task import TaskBaseDTO
+from src.application.dtos.task import TaskBaseDTO
 
 
 class GetTaskByIdHandler:
@@ -14,5 +14,4 @@ class GetTaskByIdHandler:
         Handler que obtiene un task filtrado por id
         """
 
-        result = await self.repository.get_task_by_id(task_id)
-        return result
+        return await self.repository.get_task_by_id(task_id)

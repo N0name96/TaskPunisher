@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.domain.repositories.task.task_repository import TaskRepository
 from src.domain.entities.task.task_entity import Tasks
+from src.application.dtos.task.TaskCreateDTO import TaskCreateDTO
 
 
 class SQLAlchemyTaskRepository(TaskRepository):
@@ -29,5 +30,14 @@ class SQLAlchemyTaskRepository(TaskRepository):
         return task
 
     
-    async def create_task(self):
-        pass
+    async def create_task(self, new_task: TaskCreateDTO) -> int:
+        """Funcion para crear una nueva tarea"""
+
+        for key, value in new_task.__dict__.items():
+            task: Tasks = setattr(Tasks, key, value)
+
+        self.session.add(task)
+        await self.session.commit()
+        await self.session.refresh(task)
+
+        return 1
