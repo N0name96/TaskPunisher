@@ -1,17 +1,19 @@
-from typing import List
+from typing import List, Optional
 
-from src.domain.repositories.task.task_repository import TaskRepository
-from src.application.dtos.task import TaskBaseDTO
+from src.domain.models import TaskModel
+from src.domain.protocols.task_protocol import TaskProtocol
 
 
 class GetTaskByIdHandler:
-    def __init__(self, repository: TaskRepository):
-        self.repository = repository
+    def __init__(self, protocol: TaskProtocol):
+        self.protocol = protocol
 
-    
-    async def execute(self, task_id: int) -> TaskBaseDTO:
-        """
-        Handler que obtiene un task filtrado por id
-        """
 
-        return await self.repository.get_task_by_id(task_id)
+    async def get_task_by_id(self, id: int) -> Optional[TaskModel]:
+        """Handler que hace la llamada al repositorio para obtener una tarea filtrada"""
+        task = await self.protocol.get_task_by_id(id)
+
+        if not task:
+            return None
+
+        return task

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a67c9ce0-617f-4c79-aaf0-8b7cf6fb7d36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/models/punishment_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/models/task_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/protocols/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/protocols/task_protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infraestructure/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infraestructure/persistence/punishment_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infraestructure/persistence/task_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infraestructure/repositories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infraestructure/repositories/sqlalchemy_task_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/v1/endpoints/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/v1/endpoints/endpoints_tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/v1/schemas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/v1/schemas/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/commands/task/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/commands/task/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/commands/task/create_task_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/dtos/task/TaskBaseDTO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/dtos/task/TaskCreateDTO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/dtos/task/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/queries/task/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/queries/task/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/queries/task/get_all_tasks_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/queries/task/get_all_tasks_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/queries/task/get_task_by_id_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/queries/task/get_task_by_id_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/common/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/entities/task/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/entities/task/task_entity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/repositories/task/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/repositories/task/task_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infraestructure/database/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/infraestructure/database/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infraestructure/repositories/Task/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infraestructure/repositories/Task/sqlalchemy_task_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infraestructure/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="37NBykqiKRmGPri0cDXbbDKwG2w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.task_base_dto.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/TaskPunisher__NewApiStructure&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PersonalGit\TaskPunisher\TaskPunisher.API\src\infraestructure\database" />
+      <recent name="C:\PersonalGit\TaskPunisher\TaskPunisher.API\src\domain" />
+      <recent name="C:\PersonalGit\TaskPunisher\TaskPunisher.API\src\domain\models" />
+      <recent name="C:\PersonalGit\TaskPunisher\TaskPunisher.API\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a67c9ce0-617f-4c79-aaf0-8b7cf6fb7d36" name="Changes" comment="" />
+      <created>1766733906602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766733906602</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

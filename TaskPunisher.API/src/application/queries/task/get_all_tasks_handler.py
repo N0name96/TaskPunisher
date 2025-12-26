@@ -1,18 +1,12 @@
 from typing import List
 
-from src.domain.repositories.task.task_repository import TaskRepository
-from src.application.dtos import TaskBaseDTO
-
+from src.domain.protocols.task_protocol import TaskProtocol
+from src.domain.models.task_model import TaskModel
 
 class GetAllTasksHandler:
-    def __init__(self, repository: TaskRepository):
-        self.repository = repository
+    def __init__(self, protocol: TaskProtocol):
+        self.protocol = protocol
 
-
-    async def execute(self) -> List[TaskBaseDTO]:
-        """
-        Handler que obtiene todos los tasks
-        :return:
-        """
-
-        return await self.repository.get_all_tasks()
+    async def get_all_tasks(self) -> List[TaskModel]:
+        """Handler que llama al repositorio para obtener todas las tareas"""
+        return await self.protocol.get_all_tasks()

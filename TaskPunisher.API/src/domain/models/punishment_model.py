@@ -1,10 +1,10 @@
 from pydantic import BaseModel, ConfigDict
 
 
-class TaskBaseDTO(BaseModel):
+class PunishmentModel(BaseModel):
     id: int
     title: str
     description: str
-    isCompleted: bool
+    is_completed: bool = False
 
     model_config = ConfigDict(from_attributes=True)
